@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "GameCredits Block Explorer",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "GameCredits",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "GAME",
 
   // logo
   "logo": "/images/logo.png",
@@ -26,8 +26,8 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Cyborg",
-
+  "theme": "Yeti",
+  
   // port to listen for requests on.
   "port" : 3001,
 
@@ -47,9 +47,9 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 40001,
+    "user": "rpcuser",
+    "pass": "rpcpassword"
   },
 
   // confirmations
@@ -60,7 +60,7 @@
 
   // menu settings
   "display": {
-    "api": true,
+    "api": false,
     "markets": true,
     "richlist": true,
     "twitter": true,
@@ -81,22 +81,22 @@
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1",
-    "txhash": "f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e",
-    "address": "RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb"
+    "blockindex": 2146716,
+    "blockhash": "546f3589616bebc5d0607466e8a1f1af8e81bbb877168071237891abf64ef541",
+    "txhash": "5f43885035e2dbfbf02f3232b37f66de80a471f6a06f31779cab5ef21f5d1d84",
+    "address": "Gftmt8hgzgNu6f1o85HMPuwTVBMSV2TYSt"
   },
 
   // market settings
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "JBS",
+    "coin": "GAME",
     "exchange": "BTC",
-    "enabled": ["bittrex"],
-    "cryptopia_id": "1658",
+    "enabled": ["bittrex","poloniex","cryptopia"],
+    "cryptopia_id": "2222", 
     "ccex_key" : "Get-Your-Own-Key",
-    "default": "bittrex"
+    "default": "poloniex"
   },
 
   // richlist/top100 settings
@@ -110,20 +110,20 @@
   // low flag: greater than this value flagged yellow
   // high flag: greater than this value flagged red
   "movement": {
-    "min_amount": 100,
-    "low_flag": 1000,
-    "high_flag": 5000
+    "min_amount": 1000,
+    "low_flag": 10000,
+    "high_flag": 50000
   },
 
   // twitter, facebook, googleplus, youtube
-  "twitter": "iquidus",
+  "twitter": "gamecredits",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
   "youtube": "youryoutubechannel",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "d849db99a14164f4b4c8ad6d2d8d7e2b1ba7f89963e9f4bf9fad5ff1a4754429",
+  "genesis_block": "91ec5f25ee9a0ffa1af7d4da4db9a552228dd2dc77cdb15b738be4e1f55f30ee",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -140,7 +140,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "COINBASE",
+  "supply": "TXOUTSET",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
@@ -157,6 +157,91 @@
   // type (optional) = class of label, valid types: default, primary, warning, danger, success
   // url (optional) = url to link to for more information
   "labels": {
+  	"GaPoGLMYyHYGuU5RPhRKJ7ZtKrCZmeZoiE": {"label": "The GameCredits Foundation"},
+  	"GfNpG2GVsVP9YLZUbNTPcariZ9nq4gxJvu": {"label": "Poloniex"},
+  	"GXHEq9LqQVhhPGtJbudQMYpb4faXp5BoCW": {"label": "Bittrex"},
+  	"GbgksASy6cMho4HKDGuH2zu92TKbtb7rpy": {"label": "MGO ICO"},
+  	"GbKACgAhievKMdekKy8DzBdRiqWk3ZLUnW": {"label": "MGO ICO"},
+  	"GKuutWZJ52sn3Lm35u4ntS1zUYZD9faPxt": {"label": "MGO ICO"},
+  	"GK6YVL6pEusnR3ebZkT7Ed6WVGmJunFiUN": {"label": "MGO ICO"},
+  	"GHt33DrxWodFARCsawmLrDcSA4CEx9vz44": {"label": "MGO ICO"},
+  	"GZxXGxrVs34g2oXJVXBEsgz8EiPTzHtRdm": {"label": "Suspected 520K Thief's Exchange Account"},
+  	"GZmPDg3BZMrtKMsgsCgCXrunkfY3wYzQhL": {"label": "Suspected 520K Thief's Exchange Account"},
+  	"GdpPLc8wVDAeBrCN3dbeTw77k8bEN8Ra4j": {"label": "Bittrex"},
+	"GJcncf4SP3fEbKBEjpF1ssLzE9s8azDd5C": {"label": "Hash-To-Coins"},
+	"GXwusNkw6DDB7gjj1Jcwvf9RbXkirMK9a1": {"label": "Supernova"},
+	"GK4oNdCtxNPqeLiUXzc8422HnEvHfC7WxT": {"label": "Acidpool"},
+	"GMuwYNbQai247r5sa8pNrevAsTNxW1C4qu": {"label": "Mastermining"},
+	"GU2r2Fk263kiDfp6q7C7YKivQCeZQexPLe": {"label": "Multipool.us"},
+	"Ga2MUY8KE93fH5q5sSPdqw2qqecHBYGobP": {"label": "Prohashing"},
+	"GaoGv69RCd8gkrwkRCopETqVTFmYjKJcM2": {"label": "Mining-Dutch NL"},
+	"GZfs8kUpCS5SezqQUxPyadJkRB8qLo": {"label": "poolto.be"}, // maybe fake	
+	"GfHFSrML393WGxefrh2oGyZmr4tv9mMi7q": {"label": "Hashwiz"},
+  	"GWsW2A1ud72KoKJZysVLtEAYmgYZZzbMxG": {"label": "Komodo Notary 0dev1_jl777"},
+	"GVHt2jSLAysFAArwNBiraBzz5XFVPQ91Kd": {"label": "Komodo Notary 0dev2_kolo"},
+	"Gc8SVWdgKGhmPg5kG6jQSZzLKmyNFcpSGB": {"label": "Komodo Notary 0dev3_kolo"},
+	"GMnvf6yGtEV7ppnRJBSLrMQf9Jpaa99hQA": {"label": "Komodo Notary 0dev4_decker"},
+	"GbUFm44VfQQ9GJg1Jns3Du4VNhv9YrtZxD": {"label": "Komodo Notary a-team_SH"},
+	"GfomutvEtFHG58MX1XrMVaoyff1gkqs4LM": {"label": "Komodo Notary artik_AR"},
+	"GUbB5zsrePjLJJVAZ1XehCc6RXVKA7EFXz": {"label": "Komodo Notary artik_EU"},
+	"GQSbwDTfPR7MWRwhPPb9bKXiWy9AhVzXub": {"label": "Komodo Notary artik_NA"},
+	"GXNiMpm3w4dYNRceQrZbyPtRi5cu77J9aM": {"label": "Komodo Notary artik_SH"},
+	"GeXd95toaZPv1oZoTf39zPz7Esn2XT79Kb": {"label": "Komodo Notary badass_EU"},
+	"GJ5vCDAo6MZfycHA7d9pkpCQw53on3cxQc": {"label": "Komodo Notary badass_NA"},
+	"GeVLq9CVtoAVjsZMFccPw8QYnNSTcEkLFk": {"label": "Komodo Notary batman_AR"},
+	"GgeBu4ESGJN4FpksmDu61TSftvKUKSemPj": {"label": "Komodo Notary batman_SH"},
+	"GdVfY6bfkh1u72SwhTAXtXWxtGL5GjdbTL": {"label": "Komodo Notary ca333_EU"},
+	"GayD9471VSvAo3pQZFJrvKtjJg9AW5DV5S": {"label": "Komodo Notary chainmakers_EU"},
+	"GUonCoJBYfcPwgiXUmg46zC3b5yYaorVq4": {"label": "Komodo Notary chainmakers_NA"},
+	"GgR8jSuipxy9sAwrVYn1NGTuP7FzS42Su9": {"label": "Komodo Notary chainstrike_SH"},
+	"GL8hFmoWG3DRmPhopCWCbfCCJJuf542tkj": {"label": "Komodo Notary cipi_AR"},
+	"GMbdioZErnKstsPe9CbCvGJ6YQuGNLf8nL": {"label": "Komodo Notary cipi_NA"},
+	"GJgWdrFVkJhj3r3NNqSW13K9vitPt7tqBi": {"label": "Komodo Notary crackers_EU"},
+	"GZAv1Xk1MCwpGfqYeC9MwzQvbqTawzgQ94": {"label": "Komodo Notary crackers_NA"},
+	"Gf4cNofauYyf5qb4pdQTXNsohnCQeSNPn1": {"label": "Komodo Notary dwy_EU"},
+	"GKqw6Wz1rdDYhaHfL4HYsuHN8jX1V844aN": {"label": "Komodo Notary emmanux_SH"},
+	"GYJD6rpGtGJsCMxCYX4xKfYff8KLyodbVJ": {"label": "Komodo Notary etszombi_EU"},
+	"GKTFbYiY4vg1JjqRA4rLvR9d1cNgrFbtED": {"label": "Komodo Notary fullmoon_AR"},
+	"GKTiL1LcW1T18CdMCyndMsiMBiPGWAvmzi": {"label": "Komodo Notary fullmoon_NA"},
+	"GJ5cKYeMriGdn4F85RgQxyJYfFtjJiSk3g": {"label": "Komodo Notary fullmoon_SH"},
+	"GSZKkMwnBN7n3jFKr5n8BgDZGQYxyc2PfU": {"label": "Komodo Notary goldenman_EU"},
+	"GPy7557HJTyVfb9DWaLzi6dysvGXQJsyzP": {"label": "Komodo Notary indenodes_AR"},
+	"GYKX5sbwjyGuw8FW8hc8bDbacUKxwq7naD": {"label": "Komodo Notary indenodes_EU"},
+	"GWQKkbW2mQPz1YLHQjpDbAMUDGrKXqLTzm": {"label": "Komodo Notary indenodes_NA"},
+	"GZHYZiRGyXJKAP8rAcXJTdHG1w9KsJRjgj": {"label": "Komodo Notary indenodes_SH"},
+	"GdApDBShUCVfbcZY87zmM3covsczkp5Khi": {"label": "Komodo Notary jackson_AR"},
+	"GLircdEUdRJoqFEXTkHEU8FvTg7LtR8epc": {"label": "Komodo Notary jeezy_EU"},
+	"GSmp53AHvXwvubn4CSpGYSteFCNQMwPgYB": {"label": "Komodo Notary karasugoi_NA"},
+	"GfFYrrRGm6fDkik9BtBypLEiVZkNLZndVn": {"label": "Komodo Notary komodoninja_EU"},
+	"GdjCdAW4f2mVWawB3uonhA9kC9Y2EJQ7Tm": {"label": "Komodo Notary komodoninja_SH"},
+	"GRWukKEiFvgpFB6uyEfEuCEczkCbY6zzeZ": {"label": "Komodo Notary komodopioneers_SH"},
+	"GSUD9p3Eedik88openV6JBudateeJJkGqK": {"label": "Komodo Notary libscott_SH"},
+	"GYXbuspVqMo7o4hBHt5XH98HF8tmJCbsaH": {"label": "Komodo Notary lukechilds_AR"},
+	"GYe37bNQNJAgaPo83g8ZvmW6opJ6WH6cUm": {"label": "Komodo Notary madmax_AR"},
+	"Gdh43Sa6yaCtMR5jpAokz7fCyA3oi2Tp2i": {"label": "Komodo Notary meshbits_AR"},
+	"GRaepM8kgDKqeHKWVxo8oNigPm9GE1Nbow": {"label": "Komodo Notary meshbits_SH"},
+	"GUCFtKJ5LCr4uQCvSdwe7ZFyQNAh3xazcD": {"label": "Komodo Notary metaphilibert_AR"},
+	"GaRa5Sf3wBKv7RET76MeSWNytcoNUVqUBT": {"label": "Komodo Notary metaphilibert_SH"},
+	"GLNkHtdpy5LLLdR9c1ovonwjj6FwhymnMF": {"label": "Komodo Notary patchkez_SH"},
+	"GP5s4z498js6yqZjWabqQohS6gYDpuQuS8": {"label": "Komodo Notary pbca26_NA"},
+	"GRbCFCDkKuxg1cWGrT8Gj8mPBf8kVmSAFN": {"label": "Komodo Notary peer2cloud_AR"},
+	"GbNsGKQzUjAmzJiAwnWiyL3WLaWUSeFkrR": {"label": "Komodo Notary peer2cloud_SH"},
+	"GNc7TpaWzYMuenhYaz9Qisfgf2SbsjMs9Z": {"label": "Komodo Notary polycryptoblog_NA"},
+	"Gc5YiHGGni5GoKpn6Feq8diwJkMSjoRa1y": {"label": "Komodo Notary hyper_AR"},
+	"GYvhzFtdhHHBdaYdv7gFAMo931KYxqeE3r": {"label": "Komodo Notary hyper_EU"},
+	"GPmHwetTMGhCTuRKD3uvC18aMY2xbqtJ8i": {"label": "Komodo Notary hyper_SH"},
+	"GcBy2AvfnGfuUHdotCJjPVda3MWYXv53Hc": {"label": "Komodo Notary hyper_NA"},
+	"GexRf51jfwTYzU5Z1dd9ZL6YZgNTS6Kjem": {"label": "Komodo Notary popcornbag_AR"},
+	"GdxuH5kHdXJ32rfpHqXY6AN8sUErZdSwfm": {"label": "Komodo Notary popcornbag_NA"},
+	"GKrie4wmRVrWykv3eiPFUGbzmfHpAkrYe4": {"label": "Komodo Notary alien_AR"},
+	"GdCPuUFq5anB4oS5ZGeiMZ1m8DM9Ue51ej": {"label": "Komodo Notary alien_EU"},
+	"GKUbutsW1Pa5LWp6BRiVux2Fb8qTNG8YUW": {"label": "Komodo Notary thegaltmines_NA"},
+	"GfJnqx9qJ8A3Wok5mNQ15DiH8EDzJwkbF3": {"label": "Komodo Notary titomane_AR"},
+	"GM2R9X2L8xSmrfNgJYS7UhVWUBFenMz1kw": {"label": "Komodo Notary titomane_EU"},
+	"GKQXawZfvJ428AeidK9vN71DHr4Vk88WD4": {"label": "Komodo Notary titomane_SH"},
+	"GWA7DBW334ytdU2GsLqA6uzrqhF4Bju86K": {"label": "Komodo Notary webworker01_NA"},
+	"GUyXWEJfoceE2RbTV8yw8oXCEoGuLCYxUT": {"label": "Komodo Notary xrobesx_NA"},
+	"Gftmt8hgzgNu6f1o85HMPuwTVBMSV2TYSt": {"label": "Komodo Notarization"}
   //  "JSoEdU717hvz8KQVq2HfcqV9A79Wihzusu": {"label": "Developers address", "type":"primary", "url":"http://example.com"},
   //  "JSWVXHWeYNknPdG9uDrcBoZHztKMFCsndw": {"label": "Cryptsy"}
   }
