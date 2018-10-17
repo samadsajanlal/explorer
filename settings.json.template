@@ -158,6 +158,7 @@
   // url (optional) = url to link to for more information
   "labels": {
   	"GaPoGLMYyHYGuU5RPhRKJ7ZtKrCZmeZoiE": {"label": "The GameCredits Foundation"},
+  	"GM6XEhqH4fumP5Vs3FK4L14Bia3JdKGYgz": {"label": "The GameCredits Foundation"},
   	"GfNpG2GVsVP9YLZUbNTPcariZ9nq4gxJvu": {"label": "Poloniex"},
   	"GXHEq9LqQVhhPGtJbudQMYpb4faXp5BoCW": {"label": "Bittrex"},
   	"GbgksASy6cMho4HKDGuH2zu92TKbtb7rpy": {"label": "MGO ICO"},
@@ -168,6 +169,7 @@
   	"GZxXGxrVs34g2oXJVXBEsgz8EiPTzHtRdm": {"label": "Suspected 520K Thief's Exchange Account"},
   	"GZmPDg3BZMrtKMsgsCgCXrunkfY3wYzQhL": {"label": "Suspected 520K Thief's Exchange Account"},
   	"GdpPLc8wVDAeBrCN3dbeTw77k8bEN8Ra4j": {"label": "Bittrex"},
+  	"GLQxRzwhz6B7YfT5R8ruKSjtduXsirZ1i5": {"label": "Bittrex"},
 	"GJcncf4SP3fEbKBEjpF1ssLzE9s8azDd5C": {"label": "Hash-To-Coins"},
 	"GXwusNkw6DDB7gjj1Jcwvf9RbXkirMK9a1": {"label": "Supernova"},
 	"GK4oNdCtxNPqeLiUXzc8422HnEvHfC7WxT": {"label": "Acidpool"},
