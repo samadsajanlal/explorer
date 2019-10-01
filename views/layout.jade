@@ -120,6 +120,10 @@ html
                 a.navbar-link.loading(href='/markets/#{settings.markets.default}') 
                   span.fa.fa-line-chart
                   span.menu-text #{settings.locale.menu_markets}
+              li#info
+                a.navbar-link(href='https://exchange.gamecredits.network')
+                  span.glyphicon.glyphicon-book
+                  span.menu-text #{settings.locale.menu_exchange}
             if settings.display.api == true
               li#info
                 a.navbar-link(href='/info')
@@ -218,8 +222,7 @@ html
             li.text-center(style='margin-left:80px;margin-right:80px;')
               p(style='margin-top:15px;') 
                 a.navbar-link(href='https://github.com/iquidus/explorer', target='_blank') Powered by Iquidus Explorer<br/>
-                a.navbar-link(href='https://www.blockchain.com/btc/address/15j8jcnR2BX66F1AKSVXgvqu2YW3tLohEt', target='_blank') BTC:15j8jcnR2BX66F1AKSVXgvqu2YW3tLohEt<br/>
-                a.navbar-link(href='https://gamecredits.network/address/GcGBy77CCfZJJhGLALohdahf9eAc7jo7Yk', target='_blank') GAME:GcGBy77CCfZJJhGLALohdahf9eAc7jo7Yk
+                a.navbar-link(href='https://www.blockchain.com/btc/address/18yAke4ATrRSrjoaZkzdvD5SsU8nj6fmRn', target='_blank') BTC:18yAke4ATrRSrjoaZkzdvD5SsU8nj6fmRn<br/>
                 <!-- <br><font color='white'>Deployed with love by n64</font>--> 
        span.connections
           label#lblBlockcount.label.label-default -
